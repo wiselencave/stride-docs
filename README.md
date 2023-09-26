@@ -10,7 +10,7 @@ Welcome to the Stride Docs repository. This repository contains all the source f
 
 ## 🚀 Getting Started
 
-All the information you need to get started with Stride Docs development can be found in the 📚 [Stride Docs Wiki](https://github.com/VaclavElias/stride-docs-next/wiki).
+All the information you need to get started with Stride Docs development can be found in the 📚 [Stride Docs Wiki](https://github.com/stride3d/stride-docs/wiki).
 
 ## 🤝 Contributing
 
@@ -31,11 +31,11 @@ Stride Docs website is _not_ released under a regular cadence; new updates arriv
 
 The staging website allows us to test new features and significant changes before their official release.
 
-The staging website is available at https://stride-docs-staging.azurewebsites.net/
+The staging website is available at https://stride-doc-staging.azurewebsites.net/
 
 ## 🗺️ Roadmap
 
-Our Wiki [Roadmap](https://github.com/VaclavElias/stride-docs-next/wiki/Roadmap) communicates upcoming changes to the Stride Docs.
+Our Wiki [Roadmap](https://github.com/stride3d/stride-docs/wiki/Roadmap) communicates upcoming changes to the Stride Docs.
 
 ## 🌐 .NET Foundation
 

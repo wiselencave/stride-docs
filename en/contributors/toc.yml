@@ -1,8 +1,13 @@
+pdf: true
+pdfFileName: contributing-in-stride.pdf
+items:
 - name: 🌟 Ways to Contribute
-  href: ways-to-contribute.md
+  href: index.md
   expanded: true
 - name: 💸 Donate
   href: donate.md
+- name: 🤝 Contribution Workflow
+  href: contribution-workflow.md
 - name: 🛠️ Contribute to the engine
   expanded: false
   href: engine/index.md
@@ -21,8 +26,8 @@
     href: engine/source-debugging.md
   - name: Visual Studio plugin
     href: engine/visual-studio-plugin.md
-  - name: 🏗️️ Architecture
-    expanded: false
+  - name: 🏗️ Architecture
+    expanded: true
     href: engine/architecture/index.md
     items:
     - name: Build pipeline
@@ -34,27 +39,29 @@
     - name: Dependency graph
       href: engine/architecture/dependency-graph.md
     - name: Asset introspection
-      href: engine/architecture/build-pipeline.md
-- name: 🎓 Contribute to the documentation
+      href: engine/architecture/asset-introspection.md
+- name: 📖 Contribute to the documentation
   expanded: false
   href: documentation/index.md
   items:
-  - name: Documentation generation pipeline
-    href: Documentation/documentation-generation-pipeline.md
+  - name: Generation Pipeline
+    href: documentation/documentation-generation-pipeline.md
   - name: Installation
-    href: Documentation/installation.md
+    href: documentation/installation.md
   - name: Content
-    href: Documentation/content.md
+    href: documentation/content.md
 #  - name: New language
-#    href: Documentation/new-language.md
+#    href: documentation/new-language.md
   - name: Roadmap
-    href: Documentation/roadmap.md
-  - name: DocFX
-    href: Documentation/docfx.md
+    href: documentation/roadmap.md
+  - name: Docfx
+    href: documentation/docfx.md
   - name: Deployment
-    href: Documentation/deployment-azure.md
+    href: documentation/deployment-azure.md
+  - name: Major Release Workflow
+    href: documentation/major-release-workflow.md
   - name: Troubleshooting and FAQ
-    href: Documentation/troubleshooting-and-faq.md
+    href: documentation/troubleshooting-and-faq.md
 - name: 🌐️ Contribute to the website
   expanded: false
   href: website/index.md
@@ -63,11 +70,18 @@
       href: website/installation.md
     - name: Website Content
       href: website/content.md
+      items:
+      - name: Shortcodes and Includes
+        href: website/content-shortcodes-and-includes.md
+    - name: Figma Designs
+      href: website/figma.md
     - name: Roadmap
       href: website/roadmap.md
     - name: Eleventy
       href: website/eleventy.md
     - name: Deployment
       href: website/deployment-azure.md
+    - name: Major Release Workflow
+      href: website/major-release-workflow.md
     - name: Troubleshooting and FAQ
       href: website/troubleshooting-and-faq.md

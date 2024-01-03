@@ -1,4 +1,5 @@
-﻿# Contributing to documentation
+# Contributing to documentation
+
 This documentation serves as a comprehensive guide to help you navigate and contribute to the **Stride Docs** website.
 
 If you're looking to make minor changes, such as adding or updating a manual, tutorial or page, or fixing a typo, feel free to jump straight to the [Content Updates](content.md#content-updates) section.
@@ -7,57 +8,27 @@ For more extensive updates 🤯🤦‍♂️ or for a deeper understanding of th
 
 Here are the technologies we use to build our website:
 
-- [docfx](https://dotnet.github.io/docfx/index.html) (static site generator)
+- [Docfx](https://dotnet.github.io/docfx/index.html) (static site generator)
+  - A specific version of Docfx is utilized in GitHub Actions, one that has been thoroughly tested. Should you wish to upgrade this version, please ensure it is properly tested before implementation.
 - Markdown
-- [Mustache](https://mustache.github.io/) template engine (docfx dropped Liquid template engine support)
+- [Mustache](https://mustache.github.io/) template engine (Docfx dropped Liquid template engine support)
 - Bootstrap
 - Emojis (because why not? 😎)
 - HTML, JavaScript, CSS, JSON
 - PowerShell scripts
-- GitHub Actions (CI/CD) - Don't worry, this is already set up, you don't need to worry about it.
+- GitHub Actions (CI/CD)
+  - Our [GitHub Actions](https://github.com/stride3d/stride-docs/tree/master/.github/workflows) are already configured for deploying to both staging and release environments.
+  - For personal testing or demonstration purposes, you may need to set up your own GitHub Actions. This is especially useful for showcasing proposed changes to maintainers for their approval. For guidance on this, refer to our [Deployment to GitHub Pages guide](deployment-azure.md#deployment-to-github-pages).
 
-## Table of Contents
+## Dependencies
 
-- [Understanding the Stride Documentation Generation Pipeline](documentation-generation-pipeline.md)
-    - [Introduction](documentation-generation-pipeline.md#introduction)
-    - [A Simplified Overview](documentation-generation-pipeline.md#a-simplified-overview)
-    - [Docs Build Workflow](documentation-generation-pipeline.md#docs-build-workflow)
-    - [Workflow Diagram](documentation-generation-pipeline.md#workflow-diagram)
-- [Installation](installation.md)
-    - [Prerequisites](installation.md#prerequisites)
-    - [Installation Steps](installation.md#installation-steps)
-    - [Running the Development Server](installation.md#running-the-development-server)
-- [Content Updates](content.md#content-updates)
-    - [Small Updates](content.md#small-updates)
-    - [Major Updates](content.md#major-updates)
-    - [Manual](content.md#manual)
-      - [Creating New Page](content.md#creating-new-manual-page)
-    - [Tutorial](content.md#tutorial)
-      - [Creating New Tutorial](content.md#creating-new-tutorial-page)
-    - [Shortcodes and Includes](content.md#shortcodes-and-includes)
-      - [Alert](content.md#alert)
-      - [Video](content.md#video)
-    - [Web Assets](content.md#web-assets)
-    - [Styling](content.md#styling)
-      - [Bootstrap Customization](content.md#bootstrap-customization)
-      - [CSS Guidelines](content.md#css-guidelines)
-    - [Submitting your Changes](content.md#submitting-your-changes)
-- [New Language](new-language.md)
-    - [Adding a New Language](new-language.md#adding-a-new-language)
-- [Roadmap](roadmap.md)
-- [DocFX](docfx.md)
-    - [Packages and Dependencies](docfx.md#packages-and-dependencies)
-    - [Configuration](docfx.md#configuration)
-    - [Global Data](docfx.md#global-data)
-    - [Folder Structure](docfx.md#folder-structure)
-    - [Layouts](docfx.md#layouts)
-    - [Includes](docfx.md#includes)
-    - [Advanced Topics](docfx.md#advanced-topics)
-        - [Creating Custom Shortcodes and Includes](docfx.md#creating-custom-shortcodes-and-includes)
-- [Deployment](deployment.md)
-    - [GitHub Pages](deployment.md#github-pages)
-    - [Azure Web Apps](deployment.md#azure-web-apps)
-- [Troubleshooting and FAQ](troubleshooting-and-faq.md)
-    - [Known Issues](troubleshooting-and-faq.md#known-issues)
-    - [Common Issues and Solutions](troubleshooting-and-faq.md#common-issues-and-solutions)
-    - [Frequently Asked Questions](troubleshooting-and-faq.md#frequently-asked-questions)
+Various Stride systems rely on content fetched and processed from either the Stride website or the Stride Docs website. It's crucial to ensure that the following links remain active and accessible. Please refrain from removing or altering these links unless the dependent systems have been updated accordingly to accommodate any changes.
+
+1. https://doc.stride3d.net/latest/en/index.json
+   - This JSON file is crucial for integrating the Stride Docs search functionality with the Stride Website. It ensures that search results are comprehensive, including relevant information from both the Stride website and Stride Docs.
+1. https://doc.stride3d.net/latest/en/ReleaseNotes/ReleaseNotes.md
+   - The **Stride Launcher** utilizes this file when you click a release notes button.
+1. https://doc.stride3d.net/latest/en/diagnostics/index.html
+   - Diagnostic warnings in the Stride IDE reference pages in the Stride Docs - Diagnostics section. This ensures that users can quickly find detailed explanations and potential solutions for any issues encountered.
+1. https://doc.stride3d.net/latest/en/studio_getting_started_links.txt
+   - The **Stride Launcher** is using this file in `Urls.Designer.cs`.

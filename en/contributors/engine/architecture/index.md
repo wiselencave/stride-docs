@@ -1,18 +1,15 @@
-﻿# Engine architecture
+# Engine architecture
+
 General explanation of Stride engine source
 
+## [Build details](build-details.md)
 
-### [Build pipeline](build-pipeline.md)
-Explanation on the current build pipeline.
-
-### [Build details](build-details.md)
 Details on the building process of the Stride engine.
 
-### [Graphics API](graphics-api.md)
-Stride support different graphics APIs. Here you can read more about them.
+## [Dependency graph](dependency-graph.md)
 
-### [Dependency graph](dependency-graph.md)
-A graphical overview of Stride's Assemblies, NameSpaces and Core methods
+A graphical overview of Stride's Assemblies, NameSpaces and Core methods.
 
-### [Asset introspection](asset-introspection.md)
-How and why the Stride engine uses asset introspection
+## [Copy and paste](copy-paste.md)
+
+This document outlines the design and implementation of the copy and paste functionality in Stride. The document details the goals, scope, and current state of the feature, along with the workflow and implementation details. It explains how the copy and paste operations are handled, the role of the `ICopyPasteService` interface, and the use of copy, paste, and post-paste processors. The document also discusses the handling of data serialization and the use of editor commands for copy and paste operations.
